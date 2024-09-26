@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 def lenient_load_str(s):
     json.loads(s)
@@ -14,5 +15,5 @@ with open("./gruvbox-material-dark-template.json", "r") as template_file:
         items.sort(reverse=True)
         for color_name, color in items:
             template = template.replace(f"${color_name}", color)
-        with open("themes/gruvbox-material-dark.json", "w") as theme_file:
+        with open(Path.home() / ".config/zed/themes/gruvbox-material-dark.json", "w") as theme_file:
             theme_file.write(f"// Generated file! DO NOT EDIT!\n{template}")

@@ -24,16 +24,16 @@
         "background": "$bg",
         
         "element.background": "$bg",
-        "element.hover": "#28282800",
-        "element.active": null,
-        "element.selected": "#45403d60",
-        "element.disabled": null,
+        "element.hover": "$bg2ff",
+        "element.active": "$bg2ff",
+        "element.selected": "$bg2ff",
+        "element.disabled": "$bg1ff",
         
         "drop_target.background": "#32302f80",
         "ghost_element.background": null,
-        "ghost_element.hover": "$bg00",
-        "ghost_element.active": null,
-        "ghost_element.selected": "#45403d60",
+        "ghost_element.hover": "$bg2ff",
+        "ghost_element.active": "$bg2ff",
+        "ghost_element.selected": "$bg2ff",
         "ghost_element.disabled": null,
         "text": "$gray0",
         "text.muted": "$gray1",
@@ -195,6 +195,9 @@
             "color": "$aqua",
           },
           "preproc": {
+            "color": "$aqua",
+          },
+          "title": {
             "color": "$aqua",
           },
           "keyword": {

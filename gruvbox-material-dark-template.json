@@ -1,5 +1,5 @@
 {
-  "$schema": "https://zed.dev/schema/themes/v0.1.0.json",
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
   "name": "Gruvbox Material Dark",
   "author": "Gruvbox Material Dark",
   "themes": [
@@ -10,51 +10,62 @@
         "background.appearance": "opaque",
         "accents": [
         ],
-        "border": "$bg1",
+        "border": "$bg2",
+        "border.variant": "$bg2",
+        "border.transparent": "$bg",
+        "border.focused": "$bg2",
+        // "border.selected": "$aqua",
         // "border": "$bg",
-        // "border.variant": "$bg",
         // "border.focused": "#45403d00",
         // "border.selected": "$bg",
-        // "border.transparent": "$bg",
         // "border.disabled": "$bg",
-        // "elevated_surface.background": "$bg1",
+        // "elevated_surface.background": "$bg",
         // "elevated_surface.background": "#292828",
-        "elevated_surface.background": "$bg1",
+        "elevated_surface.background": "$bg0_s",
         "surface.background": "$bg",
         "background": "$bg",
         
-        "element.background": "$bg",
-        "element.hover": "$bg2ff",
-        "element.active": "$bg2ff",
-        "element.selected": "$bg2ff",
-        "element.disabled": "$bg1ff",
+        "element.background": "$bg0_s",
+        "element.hover": "$bg24d", // the color when doing lsp hover
+        "element.active": "$bg3",
+        "element.selected": "$bg2",
+        "element.disabled": "$gray",
+        
+        "ghost_element.background": null,
+        "ghost_element.hover": "$bg2",
+        // this is the color for button presses on the status bar
+        "ghost_element.active": "$bg3",
+        "ghost_element.selected": "$bg2",
+        "ghost_element.disabled": null,
         
         "drop_target.background": "#32302f80",
-        "ghost_element.background": null,
-        "ghost_element.hover": "$bg2ff",
-        "ghost_element.active": "$bg2ff",
-        "ghost_element.selected": "$bg2ff",
-        "ghost_element.disabled": null,
+        
         "text": "$gray0",
         "text.muted": "$gray1",
         "text.placeholder": "$gray1",
         "text.disabled": "$gray1",
-        "text.accent": "$blue",
+        "text.accent": "$aqua",
+        
         "icon": null,
         "icon.muted": null,
         "icon.disabled": null,
         "icon.placeholder": null,
-        "icon.accent": null,
-        "status_bar.background": "$bg",
-        "title_bar.background": "$bg",
+        "icon.accent": "$aqua",
+        "status_bar.background": "$bg0_s",
+        // "status_bar.background": "$bg",
+        "title_bar.background": "$bg0_s",
+        // "title_bar.background": "$bg",
+        // "title_bar.background": "$bg",
+        // "toolbar.background": "$bg0",
         "toolbar.background": "$bg",
-        "tab_bar.background": "$bg",
-        "tab.inactive_background": "$bg",
+        "tab_bar.background": "$bg0_s",
+        // "tab_bar.background": "$bg",
+        "tab.inactive_background": "$bg0_s",
         "tab.active_background": "$bg",
-        "search.match_background": "$blue66",
+        "search.match_background": "$dimAqua4d",
         "panel.background": "$bg",
-        "panel.focused_border": null,
-        "pane.focused_border": null,
+        "panel.focused_border": "$aqua",
+        // "pane.focused_border": "$aqua",
         // "pane_group.border": "#101010",
         "scrollbar.thumb.background": "$bg480",
         "scrollbar.thumb.hover_background": "$bg4",
@@ -66,16 +77,19 @@
         "editor.gutter.background": "$bg",
         "editor.subheader.background": null,
         "editor.active_line.background": "#38343290",
-        "editor.highlighted_line.background": null,
+        // "editor.active_line.background": "$bg2",
+        "editor.highlighted_line.background": "$dimAqua4d",
         "editor.line_number": "$bg4",
-        "editor.active_line_number": "$fg3",
-        "editor.invisible": null,
+        "editor.active_line_number": "$fg4",
+        "editor.invisible": null, // this is for stuff like indentation markers
         "editor.wrap_guide": "$bg",
         "editor.active_wrap_guide": "$bg",
-        "editor.indent_guide": null,
-        "editor.indent_guide_active": null,
-        "editor.document_highlight.read_background": null,
-        "editor.document_highlight.write_background": null,
+        "editor.indent_guide": "$bg2",
+        "editor.indent_guide_active": "$bg3",
+        "panel.indent_guide": "$bg2",
+        "panel.indent_guide_active": "$bg3",
+        "editor.document_highlight.read_background": "$bg24d",
+        "editor.document_highlight.write_background": "$bg24d",
         "terminal.background": "$bg",
         "terminal.foreground": "$fg",
         "terminal.bright_foreground": null,
@@ -104,40 +118,44 @@
         "terminal.ansi.white": "$fg",
         "terminal.ansi.bright_white": "$fg",
         "terminal.ansi.dim_white": null,
-        "link_text.hover": "#8f9a52",
-        "conflict": "#d3869ba0",
+        "link_text.hover": "$bg266",
+        "conflict": "$purple",
         "conflict.background": null,
         "conflict.border": null,
-        "created": "#8f9a52a0",
+        "created": "$dimGreen",
         "created.background": null,
         "created.border": null,
-        "deleted": "#b85651a0",
+        "deleted": "$dimRed",
         "deleted.background": null,
         "deleted.border": null,
         "error": "$red",
-        "error.background": "$dimRed",
-        "error.border": "$dimRed",
+        // "error.border": "$red",
+        // "error.background": "$red66w",
         
         "hidden": "$gray1",
         "hidden.background": null,
         "hidden.border": null,
         
-        "hint": "$gray1",
+        "hint": "$bg3",
         "hint.background": null,
         "hint.border": null,
         
-        "ignored": "#5a524c",
+        "ignored": "$bg2",
         "ignored.background": null,
         "ignored.border": null,
         "info": "$blue",
+        "info.border": "$dimBlue66",
+        "info.background": "$blue",
         // "info.background": "#68948a00",
         // "info.border": null,
         "warning": "$yellow",
-        "warning.background": "$bg1",
-        // "warning.border": null,
+        "warning.background": "$dimYellow66",
+        "warning.border": "$yellow",
+        
         "modified": "$dimGreen",
         // "modified.background": "$bg",
         // "modified.border": null,
+
         "success": "$green",
         // "success.background": null,
         // "success.border": null,
@@ -151,10 +169,15 @@
         // "unreachable.background": null,
         // "unreachable.border": null,
         "players": [
+           {
+             "cursor": "$fg",
+             "background": "$fg",
+             "selection": "$bg2b0"
+           },
           {
-            "cursor": "$blueff",
-            "background": "$blueff",
-            "selection": "#83a5983d"
+            "cursor": "$blue",
+            "background": "$blue",
+            "selection": "#blue1a"
           }
         ],
         "syntax": {
@@ -164,9 +187,15 @@
           "attribute": {
             "color": "$blue",
           },
+          "tag": {
+              "color": "$aqua",
+          },
           "property": {
             "color": "$blue",
           },
+          // "punctuation.bracket": {
+          //   "color": "$fg3",
+          // },
           "number": {
             "color": "$purple",
           },
@@ -206,12 +235,18 @@
           "type": {
             "color": "$yellow",
           },
+          "type.interface": {
+              "color": "$purple"
+          },
           "variant": {
-            "color": "$pink",
+            "color": "$purple",
           },
           "constructor": {
-            "color": "$pink",
+            "color": "$purple",
           },
+          "constant": {
+            "color": "$purple"
+          }
         }
       }
     },

@@ -3,12 +3,12 @@ from pathlib import Path
 
 def lenient_load_str(s):
     json.loads(s)
-    
+
 with open("./gruvbox-material-dark-template.json", "r") as template_file:
     with open("./palette.json", "r") as palette_file:
         template = template_file.read()
         palette: dict[str, str] = json.load(palette_file)
-        
+
         items = []
         for color_name, color in palette.items():
             items.append((color_name, color))

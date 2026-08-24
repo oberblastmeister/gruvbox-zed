@@ -1,6 +1,6 @@
 // Generated file! DO NOT EDIT!
 {
-  "$schema": "https://zed.dev/schema/themes/v0.1.0.json",
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
   "name": "Gruvbox Material Dark",
   "author": "Gruvbox Material Dark",
   "themes": [
@@ -11,51 +11,66 @@
         "background.appearance": "opaque",
         "accents": [
         ],
-        "border": "#3c3836",
+        "border": "#32302f",
+        "border.variant": "#32302f",
         // "border": "#282828",
-        // "border.variant": "#282828",
+        // "border.variant": "#32302f",
+        "border.transparent": "#282828",
+        "border.focused": "#504945",
+        // "border.selected": "#8ec07c",
+        // "border": "#282828",
         // "border.focused": "#45403d00",
         // "border.selected": "#282828",
-        // "border.transparent": "#282828",
         // "border.disabled": "#282828",
-        // "elevated_surface.background": "#3c3836",
+        // "elevated_surface.background": "#282828",
         // "elevated_surface.background": "#292828",
-        "elevated_surface.background": "#3c3836",
+        "elevated_surface.background": "#282828",
         "surface.background": "#282828",
         "background": "#282828",
         
-        "element.background": "#282828",
-        "element.hover": "#504945ff",
-        "element.active": "#504945ff",
-        "element.selected": "#504945ff",
-        "element.disabled": null,
+        "element.background": "#32302f",
+        // "element.hover": "#5049454d", // the color when doing lsp hover
+        "element.hover": "#504945", // the color when doing lsp hover
+        "element.active": "#665c54",
+        "element.selected": "#504945",
+        "element.disabled": "$gray",
+        
+        "ghost_element.background": null,
+        "ghost_element.hover": "#504945",
+        // this is the color for button presses on the status bar
+        "ghost_element.active": "#665c54",
+        "ghost_element.selected": "#504945",
+        "ghost_element.disabled": null,
         
         "drop_target.background": "#32302f80",
-        "ghost_element.background": null,
-        "ghost_element.hover": "#504945ff",
-        "ghost_element.active": "#504945ff",
-        "ghost_element.selected": "#504945ff",
-        "ghost_element.disabled": null,
+        
         "text": "#a89984",
         "text.muted": "#928374",
         "text.placeholder": "#928374",
         "text.disabled": "#928374",
-        "text.accent": "#83a598",
+        "text.accent": "#8ec07c",
+        
         "icon": null,
         "icon.muted": null,
         "icon.disabled": null,
         "icon.placeholder": null,
-        "icon.accent": null,
+        "icon.accent": "#8ec07c",
+        // "status_bar.background": "#32302f",
         "status_bar.background": "#282828",
+        // "title_bar.background": "#32302f",
         "title_bar.background": "#282828",
+        // "title_bar.background": "#282828",
+        // "toolbar.background": "#282828",
         "toolbar.background": "#282828",
+        // "tab_bar.background": "#32302f",
         "tab_bar.background": "#282828",
+        // "tab.inactive_background": "#32302f",
         "tab.inactive_background": "#282828",
         "tab.active_background": "#282828",
-        "search.match_background": "#83a59866",
+        "search.match_background": "#72966c4d",
         "panel.background": "#282828",
-        "panel.focused_border": null,
-        "pane.focused_border": null,
+        "panel.focused_border": "#8ec07c",
+        // "pane.focused_border": "#8ec07c",
         // "pane_group.border": "#101010",
         "scrollbar.thumb.background": "#7c6f6480",
         "scrollbar.thumb.hover_background": "#7c6f64",
@@ -66,17 +81,21 @@
         "editor.background": "#282828",
         "editor.gutter.background": "#282828",
         "editor.subheader.background": null,
-        "editor.active_line.background": "#38343290",
-        "editor.highlighted_line.background": null,
+        "editor.active_line.background": "#32302f",
+        // "editor.active_line.background": "#282828",
+        // "editor.active_line.background": "#504945",
+        "editor.highlighted_line.background": "#72966c4d",
         "editor.line_number": "#7c6f64",
-        "editor.active_line_number": "#bdae93",
-        "editor.invisible": null,
+        "editor.active_line_number": "#a89984",
+        "editor.invisible": null, // this is for stuff like indentation markers
         "editor.wrap_guide": "#282828",
         "editor.active_wrap_guide": "#282828",
-        "editor.indent_guide": null,
-        "editor.indent_guide_active": null,
-        "editor.document_highlight.read_background": null,
-        "editor.document_highlight.write_background": null,
+        "editor.indent_guide": "#504945",
+        "editor.indent_guide_active": "#665c54",
+        "panel.indent_guide": "#504945",
+        "panel.indent_guide_active": "#665c54",
+        "editor.document_highlight.read_background": "#5049454d",
+        "editor.document_highlight.write_background": "#5049454d",
         "terminal.background": "#282828",
         "terminal.foreground": "#ebdbb2",
         "terminal.bright_foreground": null,
@@ -105,40 +124,44 @@
         "terminal.ansi.white": "#ebdbb2",
         "terminal.ansi.bright_white": "#ebdbb2",
         "terminal.ansi.dim_white": null,
-        "link_text.hover": "#8f9a52",
-        "conflict": "#d3869ba0",
+        "link_text.hover": "#50494566",
+        "conflict": "#d3869b",
         "conflict.background": null,
         "conflict.border": null,
-        "created": "#8f9a52a0",
+        "created": "#98971a",
         "created.background": null,
         "created.border": null,
-        "deleted": "#b85651a0",
+        "deleted": "#cc241d",
         "deleted.background": null,
         "deleted.border": null,
         "error": "#fb4934",
-        "error.background": "#cc241d",
-        "error.border": "#cc241d",
+        "error.background": "#cc241d66",
+        "error.border": "#fb4934",
         
         "hidden": "#928374",
         "hidden.background": null,
         "hidden.border": null,
         
-        "hint": "#928374",
+        "hint": "#665c54",
         "hint.background": null,
         "hint.border": null,
         
-        "ignored": "#5a524c",
+        "ignored": "#504945",
         "ignored.background": null,
         "ignored.border": null,
         "info": "#83a598",
+        "info.border": "#83a598",
+        "info.background": "#68948a66",
         // "info.background": "#68948a00",
         // "info.border": null,
         "warning": "#fabd2f",
-        "warning.background": "#3c3836",
-        // "warning.border": null,
+        "warning.border": "#fabd2f",
+        "warning.background": "#c18f4166",
+        
         "modified": "#98971a",
         // "modified.background": "#282828",
         // "modified.border": null,
+
         "success": "#b8bb26",
         // "success.background": null,
         // "success.border": null,
@@ -152,10 +175,15 @@
         // "unreachable.background": null,
         // "unreachable.border": null,
         "players": [
+           {
+             "cursor": "#ebdbb2",
+             "background": "#ebdbb2",
+             "selection": "#504945b0"
+           },
           {
-            "cursor": "#83a598ff",
-            "background": "#83a598ff",
-            "selection": "#83a5983d"
+            "cursor": "#83a598",
+            "background": "#83a598",
+            "selection": "#blue1a"
           }
         ],
         "syntax": {
@@ -165,9 +193,16 @@
           "attribute": {
             "color": "#83a598",
           },
+          "tag": {
+              // "color": "#8ec07c",
+              "color": "#fabd2f",
+          },
           "property": {
             "color": "#83a598",
           },
+          // "punctuation.bracket": {
+          //   "color": "#bdae93",
+          // },
           "number": {
             "color": "#d3869b",
           },
@@ -193,10 +228,12 @@
             "color": "#b8bb26",
           },
           "function.special": {
-            "color": "#8ec07c",
+            // "color": "#8ec07c",
+            "color": "#fabd2f",
           },
           "preproc": {
-            "color": "#8ec07c",
+            // "color": "#8ec07c",
+            "color": "#fabd2f",
           },
           "title": {
             "color": "#8ec07c",
@@ -205,14 +242,22 @@
             "color": "#fb4934",
           },
           "type": {
-            "color": "#fabd2f",
+            // "color": "#fabd2f",
+            "color": "#8ec07c",
+            // "color": "#83a598",
+          },
+          "type.interface": {
+              "color": "#d3869b"
           },
           "variant": {
-            "color": "$pink",
+            "color": "#d3869b",
           },
           "constructor": {
-            "color": "$pink",
+            "color": "#d3869b",
           },
+          "constant": {
+            "color": "#d3869b"
+          }
         }
       }
     },

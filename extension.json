@@ -1,9 +1,9 @@
 {
-  "name": "Tokyo Night Themes",
-  "version": "0.0.2",
+  "name": "Gruvbox Material Dark",
+  "version": "0.0.1",
   "authors": [
-    "ssaunderss <austinsaunders@me.com>"
+    "Brian Shu <littlebubu.shu@gmail.com>"
   ],
-  "description": "Portable Tokyo Night Themes",
-  "repository": "https://github.com/ssaunderss/zed-tokyo-night"
+  "description": "Gruvbox Material Dark theme",
+  "repository": "https://github.com/oberblastmeister/gruvbox-zed"
 }
